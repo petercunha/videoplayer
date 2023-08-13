@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="center">
+            <h2>Video Streaming</h2>
+            <video 
+                id="video" 
+                width="600" 
+                poster="/media/placeholder.webp" 
+                controls 
+                autoplay>
+            </video>
+            <br>
+            <p>
+                <i>
+                    Example of video streaming using the 
+                    <a href="https://www.cloudflare.com/learning/video/what-is-mpeg-dash/">
+                        DASH protocol
+                    </a>
+                </i>
+            </p>
+        </div>
+        <br>
+        <p>This video is adaptively buffered and loaded in chunks for optimized playback.
+        </p>
+        <ul>
+            <li>Website by <a href="https://petercunha.com">Peter</a></li>
+            <li>Video by <a href="https://www.youtube.com/watch?v=H3oiThw2RxE">Wunkolo</a></li>
+            <li>MP4 to DASH conversion by <a href="https://github.com/axiomatic-systems/Bento4">Bento4</a></li>
+            <li>Streaming technology by <a href="https://github.com/shaka-project/shaka-player">Google Shaka</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.8/shaka-player.compiled.js"
+        integrity="sha512-7r62UkbrNQ8baaPcgDF0w+iwspyRwD4/0LNR2ul2uLNFvfASqXz5q9/V+4PmoWz22TxtBVZqSBz2iacYgw8L8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+        integrity="sha512-7r62UkbrNQ8baaPcgDF0w+iwspyRwD4/0LNR2ul2uLNFvfASqXz5q9/V+4PmoWz22TxtBVZqSBz2iacYgw8L8g=="></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

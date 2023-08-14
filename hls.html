@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLS Video Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@8.3.0/dist/video-js.min.css" integrity="sha256-9A6/gnSGYfrSZhRruYPvgITgT5kwuFTUi4WhIEG2Z2s=" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>HLS Video Player</h1>
+
+    <video-js id="vid1" class="vjs-default-skin" controls>
+        <source src="/media/hls/master.m3u8" type="application/x-mpegURL" />
+    </video-js>
+
+    <script src="https://cdn.jsdelivr.net/npm/video.js@8.3.0/dist/video.min.js" integrity="sha256-W78p8bqpJZYHHw99bXBgghSZSuYx3bHLm7Rk8NrnYjY=" crossorigin="anonymous"></script>
+    <script>
+        var player = videojs('vid1');
+        player.play();
+    </script>
+</body>
+
+</html>
